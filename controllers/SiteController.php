@@ -97,7 +97,7 @@ class SiteController extends Controller
                 'name' => 'Месяц',
             ]);
         }
-        elseif  ($action === 'months2') {
+        else {
 
             $date->modify('-2 month');
             $date_before = $date->format('Y-m-d');
